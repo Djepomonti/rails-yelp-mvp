@@ -1,15 +1,147 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&display=swap');
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.52), rgba(117, 19, 93, 0.73)), url("https://images.pexels.com/photos/704982/pexels-photo-704982.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+.container {
+  width: 960px;
+  height: 100vh;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.7);}
+
+.cards_container {
+  width: 930px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+.card{
+  width: 270px;
+  background-color: #F5F5F5;
+  margin-bottom: 25px;
+}
+img {
+  height: 167px;
+  margin: 0 auto;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  margin-bottom: 10px;
+}
+.btn_container {
+  display: flex;
+  justify-content: end;
+}
+
+.btn_container a {
+  background-color: coral;
+  padding: 4px 7px;
+  margin: 0 8px;
+  margin-bottom: 10px;
+  color: #F5F5F5;
+  text-decoration: none;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+.btn_container a:nth-child(2) {
+  background-color: cornflowerblue;
+}
+.btn_container a:nth-child(3) {
+  background-color:red;
+}
+ h5{
+  margin-left: 10px;
+  margin-top: 5px;
+ }
+
+ h1{
+  text-align: center;
+  padding-top: 10px;
+  margin-bottom: 45px;
+ }
+ .btn_container a:hover{
+  background-color: rgb(228, 99, 52);
+
+ }
+.btn_container a:nth-child(2):hover {
+  background-color: rgb(54, 104, 199);
+
+}
+.btn_container a:nth-child(3):hover {
+  background-color:rgb(206, 3, 3);
+
+}
+h3{
+  display: inline-block;
+}
+.inline{
+  margin: 0 auto;
+  width: 300px;
+  display: flex;
+  padding-left: 20px;
+  justify-content: space-between;
+}
+.inline h3:first-child{
+  background-color:rgb(20, 183, 247);
+  padding: 3px 3px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+.inline h2 {
+  background-color:rgb(7, 101, 138);
+  color: #F5F5F5;
+  padding: 3px 3px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+
+}
+
+.img_left{
+  width: 400px;
+  height: 100vh;
+  object-fit: cover;
+}
+.show_container{
+  display: flex;
+}
+.btnbox a{
+  margin-top: 15px;
+height: 30px;
+}
+.btnbox a:last-child{
+  height: 60px;
+  text-align: center;
+}
+.showtext h3 {
+  font-size: 18px;
+}
+.showtext h1 {
+  font-size: 38px;
+  margin-top: 60px;
+}
